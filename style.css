@@ -73,7 +73,6 @@ form {
 
 input {
   display: block;
-  /* margin-bottom: 1.3em; */
   padding: 1em 1.2em;
   width: 100%;
   border-radius: 0.2em;
@@ -145,8 +144,9 @@ button:hover {
 }
 
 .form-terms a {
-  color: hsl(0, 100%, 74%);
+  color: hsl(0, 90%, 46%);
   text-decoration: none;
+  font-weight: bold;
 }
 
 @media (max-device-width: 768px) {
