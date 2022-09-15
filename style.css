@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background: url(./images/bg-intro-desktop.png), hsl(0, 100%, 74%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 80px auto;
+  height: 100%;
+}
+
+.main-text {
+  color: white;
+  text-align: left;
+  margin-top: 120px;
+  margin-left: 150px;
+  width: 100%;
+}
+
+.main-text h1 {
+  width: 80%;
+  line-height: 1.1;
+  margin-bottom: 0.5em;
+  font-family: "poppins", sans-serif;
+  font-size: 3em;
+}
+
+.main-text p {
+  width: 80%;
+}
+
+.main-form {
+  width: 65%;
+}
+
+.trial {
+  background-color: hsl(248, 32%, 49%);
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 1.2em;
+  padding: 0.8em;
+  text-align: center;
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+form {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2.2em;
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+input {
+  display: block;
+  /* margin-bottom: 1.3em; */
+  padding: 1em 1.2em;
+  width: 100%;
+  border-radius: 0.2em;
+  border: 1px solid hsl(246, 25%, 77%);
+  outline: none;
+}
+
+.form-control.success input {
+  border-color: hsl(154, 59%, 51%);
+}
+
+.form-control.error input {
+  border-color: hsl(0, 100%, 74%);
+}
+
+.form-control i {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  visibility: hidden;
+}
+
+.form-control.success .fa-circle-check {
+  visibility: visible;
+  color: hsl(154, 59%, 51%);
+}
+
+.form-control.form-control.error .fa-circle-exclamation {
+  visibility: visible;
+  color: hsl(0, 100%, 74%);
+}
+
+.form-control p {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 11px;
+  font-style: italic;
+  visibility: hidden;
+}
+
+.form-control.form-control.error p {
+  visibility: visible;
+  color: hsl(0, 100%, 74%);
+}
+
+button {
+  width: 100%;
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  text-transform: uppercase;
+  padding: 0.8em;
+  margin-bottom: 0.8em;
+  border-radius: 0.2em;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 3px 0 hsl(154, 68%, 37%);
+}
+
+button:hover {
+  background-color: hsl(154, 70%, 59%);
+}
+
+.terms {
+  font-size: 10px;
+  text-align: center;
+}
+
+.form-terms a {
+  color: hsl(0, 100%, 74%);
+  text-decoration: none;
+}
+
+@media (max-device-width: 768px) {
+  body {
+    width: 100vw;
+    background: url(./images/bg-intro-mobile.png), hsl(0, 100%, 74%);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto 50px;
+  }
+
+  .main-text {
+    text-align: center;
+    margin: 30px 0 50px;
+  }
+
+  .main-text h1 {
+    width: 100%;
+    font-size: 2em;
+    margin-bottom: 0.7em;
+  }
+
+  .main-text p {
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  .main-form {
+    width: 90%;
+  }
+
+  .trial {
+    padding: 1em 4em;
+  }
+
+  .terms {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+  }
+}
